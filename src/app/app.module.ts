@@ -18,7 +18,7 @@ import { NewUserComponent } from './new-user/new-user.component';
     AppComponent,
     PersonListComponent,
     PersonComponent,
-    ClapsComponent
+    ClapsComponent,
     NavBarComponent,
     NewUserComponent
   ],
