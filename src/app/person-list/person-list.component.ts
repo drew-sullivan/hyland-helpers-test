@@ -1,3 +1,4 @@
+import { ClapService } from './../claps/clap.service';
 import { IPerson } from './../shared/person.model';
 import { PersonService } from './../shared/person.service';
 import { Component, OnInit } from '@angular/core';
@@ -15,6 +16,10 @@ export class PersonListComponent implements OnInit {
 
   ngOnInit() {
     this.people = this.personService.getPeople();
+  }
+
+  incrementClap(id: number): void {
+    this.personService.addClap(id);
   }
 
 }

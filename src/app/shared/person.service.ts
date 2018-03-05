@@ -12,6 +12,11 @@ export class PersonService {
     getPerson(id: number): IPerson {
         return PEOPLE.find(person => person.id === id);
     }
+
+    addClap(id: number): void {
+        const clappedPerson = PEOPLE.find(person => person.id === id);
+        clappedPerson.numClaps += 1;
+    }
 }
 
 const PEOPLE: IPerson[] = [
