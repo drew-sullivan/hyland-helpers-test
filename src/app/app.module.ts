@@ -1,3 +1,4 @@
+import { PersonService } from './shared/person.service';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -16,7 +17,7 @@ import { PersonComponent } from './person/person.component';
   imports: [
     BrowserModule
   ],
-  providers: [],
+  providers: [PersonService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

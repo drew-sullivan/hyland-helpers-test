@@ -1,3 +1,7 @@
-<p>
-  person works!
-</p>
+<div class="well hoverwell thumbnail">
+  <h2>{{person.firstName}} {{person.lastName}}</h2>
+  <div *ngFor="let item of person.mostHelpfulWith">
+    <div>{{item}}</div>
+  </div>
+  <div>Claps: {{person.numClaps}}</div>
+</div>
