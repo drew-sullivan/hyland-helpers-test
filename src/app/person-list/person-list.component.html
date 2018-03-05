@@ -2,7 +2,7 @@
   <h1>People</h1>
   <hr>
   <div class="row person" *ngFor="let person of people">
-    <div class="col-md-2">
+    <div class="col-md-1">
       <app-claps (clap)="incrementClap(person.id)" [numClaps]="person.numClaps"></app-claps>
     </div>
     <div class="col-md-10">

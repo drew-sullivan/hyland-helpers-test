@@ -1,3 +1,8 @@
 .clappingWidgetContainer {
     cursor: pointer;
 }
+
+button {
+    margin-top: 7px;
+}
+
