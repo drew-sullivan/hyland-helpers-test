@@ -1,16 +1,6 @@
 .pad-left {
     padding-left: 5px;
 }
-.person {
-    min-height: 210px;
-    padding: 20px;
-    margin: 20px;
-}
 .bold {
     font-weight: bold;
 }
-
-.well:hover {
-    background-color: #d4edda;
-}
-

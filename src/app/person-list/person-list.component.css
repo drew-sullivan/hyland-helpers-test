@@ -1,0 +1,9 @@
+.person {
+    min-height: 210px;
+    padding: 20px;
+    margin: 20px;
+}
+
+.person:hover {
+    background-color: #d4edda;
+}

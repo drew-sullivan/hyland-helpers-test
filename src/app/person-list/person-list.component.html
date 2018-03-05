@@ -1,8 +1,11 @@
 <div>
   <h1>People</h1>
   <hr>
-  <div class="row">
-    <div class="col-md-5" *ngFor="let person of people">
+  <div class="row person" *ngFor="let person of people">
+    <div class="col-md-2">
+      <app-claps [numClaps]="person.numClaps"></app-claps>
+    </div>
+    <div class="col-md-10">
       <app-person [person]="person"></app-person>
     </div>
   </div>
