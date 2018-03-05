@@ -1,3 +1,4 @@
+import { ClapService } from './claps/clap.service';
 import { PersonService } from './shared/person.service';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
@@ -18,7 +19,7 @@ import { ClapsComponent } from './claps/claps.component';
   imports: [
     BrowserModule
   ],
-  providers: [PersonService],
+  providers: [PersonService, ClapService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
