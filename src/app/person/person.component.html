@@ -1,7 +1,7 @@
-<div class="well hoverwell thumbnail">
+<div class="well hoverwell person">
   <h2>{{person.firstName}} {{person.lastName}}</h2>
-  <div *ngFor="let item of person.mostHelpfulWith">
-    <div>{{item}}</div>
+  <div *ngFor="let item of person.mostHelpfulWith" class="col-md-3">
+    {{item}}
   </div>
   <div>Claps: {{person.numClaps}}</div>
 </div>
