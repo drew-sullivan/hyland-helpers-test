@@ -4,3 +4,6 @@
 .bold {
     font-weight: bold;
 }
+h2 {
+    display: inline-block;
+}
