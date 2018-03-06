@@ -20,7 +20,6 @@ export class PersonListComponent implements OnInit {
 
   incrementClap(id: number): void {
     this.personService.addClap(id);
-    this.people.sort(sortByNumClaps);
   }
 }
 

@@ -4,7 +4,8 @@
   <div class="container">
     <div class="row" *ngFor="let person of people">
       <div class="col-xs-1">
-        <app-claps (clap)="incrementClap(person.id)" [numClaps]="person.numClaps"></app-claps>
+        <app-claps (clap)="incrementClap(person.id)" [numClaps]="person.numClaps">
+        </app-claps>
       </div>
       <div class="col-xs-5">
         <app-person [person]="person"></app-person>
