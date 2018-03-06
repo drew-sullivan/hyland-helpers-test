@@ -1,7 +1,11 @@
 import { ClapService } from './claps/clap.service';
 import { PersonService } from './shared/person.service';
+
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatInputModule } from '@angular/material';
+import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 
@@ -24,6 +28,9 @@ import { NewUserComponent } from './new-user/new-user.component';
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
+    MatInputModule,
+    FormsModule,
     AppRoutingModule
   ],
   providers: [PersonService, ClapService],

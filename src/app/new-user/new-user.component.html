@@ -1,3 +1,16 @@
-<p>
-  new-user works!
-</p>
+
+<div id="container">
+  <input id="first-name" [(ngModel)]="firstName" placeholder="First Name">
+  <input id="last-name" [(ngModel)]="lastName" placeholder="Last Name">
+
+  <br>
+
+  <div *ngFor="let s of skills; let i = index; trackBy: customTrackBy">
+    <input  placeholder="Skill" [(ngModel)]="skills[i]">
+    <button (click)="addNewSkill()">+</button>
+  </div>
+
+
+  <br>
+  <button  (click)="addNewUser()" id="add-user">Add User</button>
+</div>

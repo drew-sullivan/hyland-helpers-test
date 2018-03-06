@@ -13,6 +13,11 @@ export class PersonService {
         return PEOPLE.find(person => person.id === id);
     }
 
+    addPerson(person: IPerson): void {
+        person.id = PEOPLE.length + 1;
+        PEOPLE.push(person);
+    }
+
     addClap(id: number): void {
         const clappedPerson = PEOPLE.find(person => person.id === id);
         clappedPerson.numClaps += 1;
