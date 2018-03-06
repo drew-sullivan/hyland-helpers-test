@@ -17,10 +17,6 @@ export class PersonListComponent implements OnInit {
   ngOnInit() {
     this.people = this.personService.getPeople().sort(sortByNumClaps);
   }
-
-  incrementClap(id: number): void {
-    this.personService.addClap(id);
-  }
 }
 
 const sortByNumClaps = (p1: IPerson, p2: IPerson): number => p2.numClaps - p1.numClaps;

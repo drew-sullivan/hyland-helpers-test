@@ -7,6 +7,10 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatInputModule } from '@angular/material';
 import { FormsModule } from '@angular/forms';
 
+// @angular/material stuff must be imported AFTER BrowserModule
+import { MatButtonModule } from '@angular/material/button';
+import { MatListModule } from '@angular/material/list';
+
 import { AppRoutingModule } from './app-routing.module';
 
 import { ClapsComponent } from './claps/claps.component';
@@ -31,7 +35,9 @@ import { NewUserComponent } from './new-user/new-user.component';
     BrowserAnimationsModule,
     MatInputModule,
     FormsModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MatButtonModule,
+    MatListModule,
   ],
   providers: [PersonService, ClapService],
   bootstrap: [AppComponent]

@@ -1,5 +1,6 @@
 import { IPerson } from './../shared/person.model';
 import { Component, OnInit, Input } from '@angular/core';
+import { PersonService } from '../shared/person.service';
 
 @Component({
   selector: 'app-person',
@@ -10,9 +11,13 @@ export class PersonComponent implements OnInit {
 
   @Input() person: IPerson;
 
-  constructor() { }
+  constructor(private personService: PersonService) { }
 
   ngOnInit() {
+  }
+
+  incrementClap(id: number): void {
+    this.personService.addClap(id);
   }
 
 }
