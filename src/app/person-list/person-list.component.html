@@ -1,12 +1,14 @@
 <div>
-  <h1>People</h1>
+  <h1>Hylanders</h1>
   <hr>
-  <div class="row person" *ngFor="let person of people">
-    <div class="col-md-1">
-      <app-claps (clap)="incrementClap(person.id)" [numClaps]="person.numClaps"></app-claps>
-    </div>
-    <div class="col-md-5">
-      <app-person [person]="person"></app-person>
+  <div class="container">
+    <div class="row" *ngFor="let person of people">
+      <div class="col-xs-1">
+        <app-claps (clap)="incrementClap(person.id)" [numClaps]="person.numClaps"></app-claps>
+      </div>
+      <div class="col-xs-5">
+        <app-person [person]="person"></app-person>
+      </div>
     </div>
   </div>
-</div>
+<div>

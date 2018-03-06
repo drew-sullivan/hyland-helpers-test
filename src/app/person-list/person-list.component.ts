@@ -15,11 +15,13 @@ export class PersonListComponent implements OnInit {
   constructor(private personService: PersonService) { }
 
   ngOnInit() {
-    this.people = this.personService.getPeople();
+    this.people = this.personService.getPeople().sort(sortByNumClaps);
   }
 
   incrementClap(id: number): void {
     this.personService.addClap(id);
+    this.people.sort(sortByNumClaps);
   }
-
 }
+
+const sortByNumClaps = (p1: IPerson, p2: IPerson): number => p2.numClaps - p1.numClaps;
