@@ -1,0 +1,14 @@
+#container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#lastName {
+  float: left;
+}
+
+.flex-child {
+  margin: auto;
+  margin-bottom: 10px;
+}
