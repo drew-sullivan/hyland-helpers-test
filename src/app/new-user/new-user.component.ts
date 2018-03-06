@@ -11,7 +11,7 @@ export class NewUserComponent implements OnInit {
 
   firstName = '';
   lastName = '';
-  skills = ['Hello World', 'This is a Second Skill'];
+  skills = [''];
 
   constructor(private personService: PersonService) { }
 

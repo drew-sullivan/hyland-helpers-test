@@ -1,16 +1,15 @@
 
 <div id="container">
-  <input id="first-name" [(ngModel)]="firstName" placeholder="First Name">
-  <input id="last-name" [(ngModel)]="lastName" placeholder="Last Name">
-
+  <input id="first-name" class="flex-child" [(ngModel)]="firstName" placeholder="First Name">
+  <input id="last-name" class="flex-child" [(ngModel)]="lastName" placeholder="Last Name">
   <br>
 
-  <div *ngFor="let s of skills; let i = index; trackBy: customTrackBy">
-    <input  placeholder="Skill" [(ngModel)]="skills[i]">
+  <h4 class="flex-child">Enter Your Skills:</h4>
+  <div class="flex-child" *ngFor="let s of skills; let i = index; trackBy: customTrackBy">
+    <input placeholder="Skill" [(ngModel)]="skills[i]">
     <button (click)="addNewSkill()">+</button>
   </div>
-
-
   <br>
-  <button  (click)="addNewUser()" id="add-user">Add User</button>
+
+  <button class="flex-child"  (click)="addNewUser()" id="add-user">Add User</button>
 </div>
