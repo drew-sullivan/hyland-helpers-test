@@ -4,12 +4,12 @@ import { PersonService } from './shared/person.service';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatInputModule } from '@angular/material';
 import { FormsModule } from '@angular/forms';
 
 // @angular/material stuff must be imported AFTER BrowserModule
 import { MatButtonModule } from '@angular/material/button';
 import { MatListModule } from '@angular/material/list';
+import { MatInputModule } from '@angular/material';
 
 import { AppRoutingModule } from './app-routing.module';
 

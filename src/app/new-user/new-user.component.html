@@ -1,4 +1,3 @@
-
 <div id="container">
   <input id="first-name" class="flex-child" [(ngModel)]="firstName" placeholder="First Name">
   <input id="last-name" class="flex-child" [(ngModel)]="lastName" placeholder="Last Name">
@@ -13,3 +12,30 @@
 
   <button class="flex-child"  (click)="addNewUser()" id="add-user">Add User</button>
 </div>
+
+<!-- <form class="example-form">
+  <mat-form-field class="example-full-width">
+    <input matInput id="first-name" class="flex-child" [(ngModel)]="firstName" placeholder="First Name" />
+  </mat-form-field>
+
+  <mat-form-field class="example-full-width">
+    <input matInput id="last-name" class="flex-child" [(ngModel)]="lastName" placeholder="Last Name" />
+  </mat-form-field>
+  
+  <mat-form-field matInput class="flex-child" *ngFor="let s of skills; let i = index; trackBy: customTrackBy">
+    <input placeholder="Skill" [(ngModel)]="skills[i]">
+    <button mat-raised-button color="secondary" (click)="addNewSkill()">+</button>
+  </mat-form-field>
+  <button mat-raised-button color="primary" class="flex-child"  (click)="addNewUser()" id="add-user">Add User</button>
+</form> -->
+
+
+<form class="example-form">
+  <mat-form-field class="example-full-width">
+    <input matInput placeholder="Favorite food" value="Sushi">
+  </mat-form-field>
+
+  <mat-form-field class="example-full-width">
+    <textarea matInput placeholder="Leave a comment"></textarea>
+  </mat-form-field>
+</form>
