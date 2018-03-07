@@ -22,3 +22,15 @@
 .example-full-width {
   width: 100%;
 }
+
+.example-75 {
+  width: 75%;
+}
+
+.example-25 {
+  width: 25%;
+}
+
+.example-10 {
+  width: 10%;
+}
