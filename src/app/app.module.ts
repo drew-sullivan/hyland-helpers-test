@@ -4,8 +4,12 @@ import { PersonService } from './shared/person.service';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatInputModule } from '@angular/material';
 import { FormsModule } from '@angular/forms';
+
+// @angular/material stuff must be imported AFTER BrowserModule
+import { MatInputModule } from '@angular/material';
+import { MatButtonModule } from '@angular/material/button';
+import { MatListModule } from '@angular/material/list';
 
 import { AppRoutingModule } from './app-routing.module';
 
@@ -31,7 +35,9 @@ import { NewUserComponent } from './new-user/new-user.component';
     BrowserAnimationsModule,
     MatInputModule,
     FormsModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MatButtonModule,
+    MatListModule,
   ],
   providers: [PersonService, ClapService],
   bootstrap: [AppComponent]

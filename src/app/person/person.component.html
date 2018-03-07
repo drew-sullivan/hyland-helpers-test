@@ -1,4 +1,13 @@
-<h2>{{person.firstName}} {{person.lastName}}</h2>
-<div *ngFor="let item of person.mostHelpfulWith">
-    {{item}}
+<div class="container person">
+    <div class="row">
+        <div class="col-md-2">
+            <app-claps (clap)="incrementClap(person.id)" [numClaps]="person.numClaps"></app-claps>
+        </div>
+        <div class="col-md-2">{{person.firstName}} {{person.lastName}}</div>
+        <div class="col-md-4">
+            <ul *ngFor="let item of person.mostHelpfulWith">
+                <li>{{item}}</li>
+            </ul>
+        </div>
+    </div>
 </div>
