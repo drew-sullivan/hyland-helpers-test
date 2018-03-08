@@ -37,6 +37,15 @@ export class NewUserComponent implements OnInit {
     this.personService.addPerson(person);
   }
 
+  removeSkill(index: number) {
+    if (this.skills.length > 1) {
+      for (let i = index; i < this.skills.length; i++) {
+        this.skills[i] = this.skills[i + 1];
+      }
+    this.skills.length = this.skills.length - 1;
+    }
+  }
+
   customTrackBy(index: number, obj: any): any {
     return index;
   }
