@@ -3,13 +3,13 @@ import { NgModule } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule } from '@angular/forms';
 
-// @angular/material stuff must be imported AFTER BrowserModule
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+
+// @angular/material stuff must be imported AFTER BrowserModule
 import {
-  ClapsComponent,
   MaterialModule,
+  ClapsComponent,
   PersonService,
   ClapService,
   PersonListComponent,
