@@ -1,24 +1,26 @@
-import { ClapService } from './claps/clap.service';
-import { PersonService } from './shared/person.service';
-
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule } from '@angular/forms';
 
 // @angular/material stuff must be imported AFTER BrowserModule
-import { MatInputModule } from '@angular/material';
-import { MatButtonModule } from '@angular/material/button';
-import { MatListModule } from '@angular/material/list';
 
 import { AppRoutingModule } from './app-routing.module';
-
-import { ClapsComponent } from './claps/claps.component';
 import { AppComponent } from './app.component';
-import { PersonListComponent } from './person-list/person-list.component';
-import { PersonComponent } from './person/person.component';
-import { NavBarComponent } from './nav-bar/nav-bar.component';
-import { NewUserComponent } from './new-user/new-user.component';
+import {
+  ClapsComponent,
+  MaterialModule,
+  PersonService,
+  ClapService,
+  PersonListComponent,
+  PersonComponent,
+  NavBarComponent,
+  NewUserComponent,
+} from './components/index';
+
+import { ToolbarComponent } from './components/toolbar/toolbar.component';
+import { MainContentComponent } from './components/main-content/main-content.component';
+import { SidenavComponent } from './components/sidenav/sidenav.component';
 
 
 @NgModule({
@@ -28,16 +30,17 @@ import { NewUserComponent } from './new-user/new-user.component';
     PersonComponent,
     ClapsComponent,
     NavBarComponent,
-    NewUserComponent
+    NewUserComponent,
+    ToolbarComponent,
+    MainContentComponent,
+    SidenavComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    MatInputModule,
     FormsModule,
     AppRoutingModule,
-    MatButtonModule,
-    MatListModule,
+    MaterialModule
   ],
   providers: [PersonService, ClapService],
   bootstrap: [AppComponent]

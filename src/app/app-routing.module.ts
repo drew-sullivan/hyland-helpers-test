@@ -1,12 +1,12 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-import { PersonListComponent } from './person-list/person-list.component';
-import { NewUserComponent } from './new-user/new-user.component';
+import { PersonListComponent, NewUserComponent, SidenavComponent } from './components/index';
 
 const routes: Routes = [
   { path: 'personlist', component: PersonListComponent },
   { path: 'newuser', component: NewUserComponent },
+  { path: 'test-material', component: SidenavComponent},
   { path: '', redirectTo: '/personlist', pathMatch: 'full'}
 ];
 

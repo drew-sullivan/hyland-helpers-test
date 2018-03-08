@@ -14,7 +14,7 @@
     <mat-form-field matInput class="example-75" *ngFor="let s of skills; let i = index; trackBy: customTrackBy">
       <input matInput placeholder="Skill" [(ngModel)]="skills[i]" name="skill">
     </mat-form-field>
-    
+
     <button mat-raised-button color="primary" (click)="addNewSkill()">+</button>
 
     <button mat-raised-button color="primary" class="flex-child"  (click)="addNewUser()" id="add-user">Submit</button>

@@ -5,7 +5,7 @@ import { IPerson } from '../shared/person.model';
 @Component({
   selector: 'app-new-user',
   templateUrl: './new-user.component.html',
-  styleUrls: ['./new-user.component.css']
+  styleUrls: ['./new-user.component.scss']
 })
 export class NewUserComponent implements OnInit {
 
