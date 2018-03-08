@@ -1,8 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-import { PersonListComponent } from './person-list/person-list.component';
-import { NewUserComponent } from './new-user/new-user.component';
+import { PersonListComponent, NewUserComponent } from './components/index';
 
 const routes: Routes = [
   { path: 'personlist', component: PersonListComponent },
