@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 
-
 // Yes, this is all of them.
 import {
   MatAutocompleteModule,
