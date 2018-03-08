@@ -2,8 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { PersonService } from '../shared/person.service';
 import { IPerson } from '../shared/person.model';
 
-import { ChangeDetectorRef } from '@angular/core';
-
 @Component({
   selector: 'app-new-user',
   templateUrl: './new-user.component.html',
