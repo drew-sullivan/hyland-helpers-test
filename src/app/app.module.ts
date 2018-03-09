@@ -8,15 +8,18 @@ import { AppComponent } from './app.component';
 
 // @angular/material stuff must be imported AFTER BrowserModule
 import {
-  MaterialModule,
   ClapsComponent,
-  PersonService,
   ClapService,
   PersonListComponent,
   PersonComponent,
   NavBarComponent,
   NewUserComponent,
 } from './components/index';
+
+import {
+  MaterialModule,
+  PersonService
+} from './shared/index';
 
 import { ToolbarComponent } from './components/toolbar/toolbar.component';
 import { MainContentComponent } from './components/main-content/main-content.component';

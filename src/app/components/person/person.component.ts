@@ -1,6 +1,6 @@
-import { IPerson } from './../shared/person.model';
+import { IPerson } from '../../shared/person.model';
 import { Component, OnInit, Input } from '@angular/core';
-import { PersonService } from '../shared/person.service';
+import { PersonService } from '../../shared/person.service';
 
 @Component({
   selector: 'app-person',
