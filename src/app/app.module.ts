@@ -9,7 +9,6 @@ import { AppComponent } from './app.component';
 // @angular/material stuff must be imported AFTER BrowserModule
 import {
   ClapsComponent,
-  ClapService,
   PersonListComponent,
   PersonComponent,
   NavBarComponent,
@@ -45,7 +44,7 @@ import { SidenavComponent } from './components/sidenav/sidenav.component';
     AppRoutingModule,
     MaterialModule
   ],
-  providers: [PersonService, ClapService],
+  providers: [PersonService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

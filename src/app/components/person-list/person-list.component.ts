@@ -1,4 +1,3 @@
-import { ClapService } from './../claps/clap.service';
 import { IPerson } from '../../shared/person.model';
 import { PersonService } from '../../shared/person.service';
 import { Component, OnInit } from '@angular/core';

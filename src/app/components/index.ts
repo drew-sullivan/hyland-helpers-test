@@ -1,6 +1,5 @@
 export * from './toolbar/toolbar.component';
 export * from './sidenav/sidenav.component';
-export * from './shared/index';
 export * from './person-list/person-list.component';
 export * from './person/person.component';
 export * from './new-user/new-user.component';
